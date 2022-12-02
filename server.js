@@ -14,9 +14,9 @@ app.use(cors({ origin: true }));
 app.use(express.json());
 
 app.get("/", (request, response) => response.status(200).send("hello world"));
-// app.get("/home", (request, response) =>
-//   response.status(200).send("Abnet the coder")
-// );
+app.get("/home", (request, response) =>
+  response.status(200).send("Abdure the coder")
+);
 app.post("/payments/create", async (request, response) => {
   const total = request.query.total;
 
