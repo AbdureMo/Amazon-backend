@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
 const stripe = require("stripe")(
   "sk_test_51Lz3XlBtfcWg7X9gQRkbXQlNCvoikUt021IF0fJKofr9iivGMxYxkAF90wPIqW2AtYBiZhrZH3mxdOXi2wSO3Jpe00nnEZufUI"
 );
